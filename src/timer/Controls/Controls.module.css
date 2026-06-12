@@ -1,0 +1,35 @@
+.controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.primary {
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #4a5568;
+  color: #fff;
+  cursor: pointer;
+}
+
+.primary:hover {
+  background: #2d3748;
+}
+
+.secondary {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: #4a5568;
+  cursor: pointer;
+}
+
+.secondary:hover {
+  background: #edf2f7;
+}

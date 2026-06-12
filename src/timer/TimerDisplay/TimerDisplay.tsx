@@ -1,4 +1,4 @@
-import type { TimerMode } from '../utils/constants'
+import type { TimerMode } from '../../utils/constants'
 import styles from './TimerDisplay.module.css'
 
 interface TimerDisplayProps {

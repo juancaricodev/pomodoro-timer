@@ -72,14 +72,10 @@ TICK(remaining=0) ──→ reducer detects remaining=0
 | `src/utils/constants.ts` | Create | Durations (WORK: 1500, SHORT_BREAK: 300, LONG_BREAK: 900), TimerMode, TimerStatus, TimerAction, TimerState types |
 | `src/utils/timerReducer.ts` | Create | Pure reducer with state guards. TICK with remaining=0 triggers auto-transition. `getInitialState()` factory |
 | `src/hooks/useTimer.ts` | Create | useReducer wrapper + setInterval with absolute endTime. Helper functions start/pause/resume/reset. Cleanup on unmount |
-| `src/timer/TimerPage.tsx` | Create | Container consuming useTimer, rendering TimerDisplay, Controls, SessionCounter |
-| `src/timer/TimerPage.module.css` | Create | Container layout styles |
-| `src/timer/TimerDisplay.tsx` | Create | MM:SS display with className based on mode (work/break) |
-| `src/timer/TimerDisplay.module.css` | Create | Work (red) and break (green/blue) visual styles |
-| `src/timer/Controls.tsx` | Create | Contextual Start|Pause|Resume button + always-visible Reset |
-| `src/timer/Controls.module.css` | Create | Button styles |
-| `src/timer/SessionCounter.tsx` | Create | sessionCount display |
-| `src/timer/SessionCounter.module.css` | Create | Counter styles |
+| `src/timer/TimerPage/TimerPage.tsx` + `TimerPage.module.css` | Create | Container consuming useTimer, rendering children |
+| `src/timer/TimerDisplay/TimerDisplay.tsx` + `TimerDisplay.module.css` | Create | MM:SS display with mode-based styling (work/break) |
+| `src/timer/Controls/Controls.tsx` + `Controls.module.css` | Create | Contextual Start|Pause|Resume button + always-visible Reset |
+| `src/timer/SessionCounter/SessionCounter.tsx` + `SessionCounter.module.css` | Create | sessionCount display |
 | `src/App.tsx` | Modify | Replace Vite boilerplate with `<TimerPage />` |
 | `src/App.css` | Modify | Clean up original scaffold styles |
 
