@@ -1,0 +1,16 @@
+.display {
+  font-size: 6rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.work {
+  color: #e3342f;
+}
+
+.break {
+  color: #38a169;
+}
