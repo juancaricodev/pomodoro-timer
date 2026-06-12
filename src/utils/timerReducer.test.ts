@@ -22,11 +22,19 @@ describe('timerReducer', () => {
   // ── START ──────────────────────────────────────────
 
   describe('START', () => {
-    it('transitions from idle to running', () => {
+    it('transitions from idle to running preserving work duration', () => {
       const state = getInitialState()
       const next = timerReducer(state, { type: 'START' })
       expect(next.status).toBe('running')
       expect(next.secondsRemaining).toBe(workDuration)
+    })
+
+    it('transitions from break idle to running preserving break duration', () => {
+      const state: TimerState = { mode: 'break', status: 'idle', secondsRemaining: shortBreak, sessionCount: 1 }
+      const next = timerReducer(state, { type: 'START' })
+      expect(next.status).toBe('running')
+      expect(next.secondsRemaining).toBe(shortBreak)
+      expect(next.mode).toBe('break')
     })
 
     it('is ignored when already running', () => {

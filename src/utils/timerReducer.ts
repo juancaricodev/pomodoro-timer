@@ -18,7 +18,7 @@ export function timerReducer(state: TimerState, action: TimerAction): TimerState
   switch (action.type) {
     case 'START': {
       if (state.status !== 'idle') return state
-      return { ...state, status: 'running', secondsRemaining: WORK_DURATION }
+      return { ...state, status: 'running' }
     }
 
     case 'PAUSE': {
