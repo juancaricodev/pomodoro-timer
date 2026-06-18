@@ -92,6 +92,10 @@ npm test
 | UC-11 | Attempt to start when already running | User (safeguard) |
 | UC-12 | Attempt to pause when idle | User (safeguard) |
 
+## Deployment
+
+Live at [**pomodoro-timer-xi-fawn.vercel.app**](https://pomodoro-timer-xi-fawn.vercel.app/) — hosted on Vercel with auto-deploy from `main`.
+
 ## Project Status
 
-**MVP complete.** The timer is fully functional with core Pomodoro features. Future iterations may include sound notifications, customizable durations, persistence, and keyboard shortcuts.
+**MVP deployed.** The timer is fully functional with core Pomodoro features. Future iterations may include sound notifications, customizable durations, persistence, and keyboard shortcuts.
